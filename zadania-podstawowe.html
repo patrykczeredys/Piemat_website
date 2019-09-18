@@ -1,0 +1,135 @@
+---
+layout: page
+permalink: /zadania-podstawowe/
+---
+
+<section class="display-posts">
+        <section class="tasks">
+            <sidebar class="info">
+                <h1 class="responsiveTitleCenter">Zadania matura podstawowa</h1>
+                <p class="about">Przed tobą zbiór zadań z każdego działu w matematyce podstawowej. Aby sprawnie obliczać zadania, przećwicz rozwiązywanie przykładowych zadań</p>
+            </sidebar>
+            <ul class="task-topic">
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Zestaw startowy</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","zestaw-startowy-podstawa-zadania" %}
+                        
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Liczby rzeczywiste</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","liczby-rzeczywiste-zadania" %}
+                    
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Ciągi</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","ciagi-zadania" %}
+                        
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Funkcja kwadratowa</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","funkcja-kwadratowa-zadania" %}
+                        
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Geometria</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","geometria-zadania" %}
+                        
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Trygonometria</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","trygonometria-zadania" %}
+                        
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Geometria analityczna</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","geometria-analityczna-zadania" %}
+                    
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Kombinatoryka, prawdopodobieństwo</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","kombinatoryka-prawdopodobienstwo-zadania" %}
+                    
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Statystyka</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","statystyka-zadania" %}
+                    
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Dowody</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","dowody-zadania" %}
+                    
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Logarytmy i funkcja wykładnicza</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","logarytmy-i-funkcja-wykladnicza-zadania" %}
+                    
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Wielomiany i funkcje wymierne</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","wielomiany-i-funkcje-wymierne-zadania" %}
+                    
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </ul> 
+        </section>
+</section>

@@ -1,0 +1,25 @@
+---
+layout: page
+permalink: /zadania-rozszerzone/
+---
+
+<section class="display-posts">
+        <section class="tasks">
+            <sidebar class="info">
+                <h1 class="responsiveTitleCenter">Zadania matura rozszerzona</h1>
+                <p class="about">Przed tobą zbiór zadań z każdego działu w matematyce rozszerzonej. Aby sprawnie obliczać zadania, przećwicz rozwiązywanie przykładowych zadań</p>
+            </sidebar>
+            <ul class="task-topic">
+                <li class="btnDisplay"><i class="fas fa-arrow-down" aria-hidden="true"></i> Zestaw startowy</li>
+                <ul class="tasks-content">
+                    {% assign sorted-posts = site.posts | where: "tags","zestaw-startowy-rozszerzenie-zadania" %}
+                            
+                    {% for task in sorted-posts %}
+                    <li>
+                        {{ task.content }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </ul> 
+        </section>
+</section>

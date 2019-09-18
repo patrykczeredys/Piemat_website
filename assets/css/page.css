@@ -1,0 +1,256 @@
+:root {
+  --primary-color: #50ccbc;
+  --dark-color: #4cb7a9;
+}
+
+.option {
+  font-size: 24px;
+  padding: 10px;
+  text-align: left;
+  color: #cdd7da;
+  transition: all 0.3s ease;
+}
+
+.option a {
+  text-decoration: none;
+  color: #efefef;
+}
+
+.option:hover {
+  cursor: pointer;
+  padding-left: 20px;
+  color: #cdcdcd;
+}
+
+.cat-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+  padding: 0 2em;
+  flex: 1;
+}
+
+.cat-nav a {
+  padding: 1.5em 0;
+}
+
+.display-posts {
+  width: 100%;
+}
+
+.flex-posts {
+  display: flex;
+}
+
+.post-details {
+  margin-top: 4em;
+  text-align: right;
+  color: #47494a;
+}
+.post-tag {
+  text-align: right;
+}
+.post-tag i {
+  color: var(--primary-color);
+}
+
+.postContent a {
+  color: var(--primary-color);
+}
+
+.postContent a:hover, .postContent a:focus {
+  color: var(--dark-color);
+  border-bottom: 2px dotted var(--dark-color);
+}
+
+.post-details i {
+  color: var(--primary-color);
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 2em;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.btn:hover, .btn:focus {
+  background-color: var(--dark-color);
+  color: #fff;
+  border: 1px solid var(--dark-color);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  color: #000;
+}
+.contactForm {
+  width: 100%;
+}
+
+.page-container {
+  width: 100%;
+}
+.page-navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10em 0;
+  flex-wrap: wrap;
+}
+.page-navigator a {
+  height: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 0 2em;
+  -webkit-box-shadow: 0px 2px 16px 7px #C1C1C1;
+  box-shadow: 0px 2px 16px 7px #C1C1C1;
+  flex: 1;
+  border-radius: .1rem;
+  background-color: #50ccbc;
+  color: #fff;
+  font-size: 1.2em
+}
+.tasks {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.task-topic {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  color: var(--primary-color);
+  flex: 3;
+}
+.task-topic li {
+  padding: 1em 2em;
+  cursor: pointer;
+}
+.tasks-content {
+  padding: 0;
+  display: none;
+  list-style: none;
+}
+.tasks-content li {
+  background: #f5f5f5;
+  color: #000;
+  cursor: default;
+  border-bottom: 2px dotted;
+}
+.tasks-content li:last-child {
+  border-bottom: none;
+}
+.actived {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+}
+.active-task {
+  display: block!important;
+}
+.info {
+  height: 100%;
+  flex: 1;
+  background-color: var(--dark-color);
+  color: #fff;
+  text-align: center;
+}
+.about {
+  font-size: .9em;
+  padding: 0 1em;
+}
+.solution {
+  color: var(--dark-color);
+}
+.postAd {
+  border-top: 2px dotted var(--primary-color);
+  border-bottom: 2px dotted var(--primary-color);
+}

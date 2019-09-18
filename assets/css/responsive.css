@@ -1,0 +1,274 @@
+@media (max-width: 1024px) {
+  .cat-nav a {
+    font-size: 0.9rem;
+  }
+  .responsiveTitleCenter {
+    font-size: 1.4rem;
+  }
+  .responsiveTitle {
+    font-size: 1.4rem;
+  }
+  .card__title {
+    font-size: 1rem;
+  }
+  .card__text {
+    font-size: 0.7rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+  menu {
+    font-size: 0.9rem;
+  }
+  .flex-posts {
+    flex-wrap: wrap;
+  }
+  .postContent {
+    padding: 0 1rem;
+    margin: 0 8rem 8rem;
+    font-size: .95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: inherit;
+  }
+  .site-pusher,
+  .site-container {
+    height: 100%;
+  }
+
+  .site-pusher {
+    transition-duration: 0.3s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  .site-content {
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+  }
+
+  .header__icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 66px;
+    cursor: pointer;
+  }
+  .header__icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
+    box-shadow: 0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 250px;
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+  }
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px dotted rgb(230, 233, 230);
+  }
+
+  .menu a:hover {
+    background-color: #50ccbc;
+    color: #fff;
+  }
+
+  .with--sidebar .site-pusher {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  .active {
+    overflow: hidden;
+  }
+  .flex-posts {
+    flex-direction: column;
+  }
+  .cat-nav {
+    width: 100%!important;
+  }
+  .cat-nav a {
+    padding: 1em 0!important;
+    font-size: 1rem;
+  }
+  .responsiveTitleCenter {
+    font-size: 1.3rem;
+  }
+  .responsiveTitle {
+    font-size: 1.3rem;
+  }
+  .card__title {
+    font-size: 1rem;
+  }
+  .card__text {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+  .postContent {
+    padding: 0;
+    margin: 0 3rem 3rem;
+    font-size: .92rem;
+  }
+  .info {
+    padding: 0 5em;
+  }
+  .page-navigator {
+    margin: 2em 0;
+  }
+  .page-navigator a {
+    margin: 1em 2em;
+    font-size: 1rem;
+    flex: auto;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .task-topic {
+    margin: 1em 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .responsiveTitleCenter {
+    font-size: 1.1rem;
+  }
+  .responsiveTitle {
+    font-size: 1.1rem;
+  }
+  .card__text {
+    font-size: 0.8rem;
+  }
+  .card__title {
+    font-size: 0.9rem;
+  }
+  .cat-nav a {
+    font-size: 0.9rem;
+  }
+  .cat-nav a:last-child {
+    margin: 0 0 16px;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+  .menu a {
+    font-size: 0.9em;
+  }
+  .postContent {
+    padding: 0;
+    margin: 0 1.5rem 1.5rem;
+    font-size: .9em;
+  }
+  .task-topic {
+    flex: auto;
+  }
+  .info {
+    padding: 1rem 2rem
+  }
+  .col-35 {
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .page-navigator {
+    margin: 2em 0;
+  }
+  .page-navigator a {
+    margin: 1em 2em;
+    font-size: .9rem;
+    flex: auto;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .col-50 {
+    flex: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .responsiveTitleCenter {
+    font-size: 1rem;
+  }
+  .responsiveTitle {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 0.7rem;
+  }
+  .cat-nav a {
+    font-size: 0.8em;
+  }
+  .task-topic li {
+    font-size: .8rem;
+    padding: 1em 1.25em;
+  }
+  .card__text {
+    font-size: 0.7rem;
+  }
+  .card__title {
+    font-size: 0.7rem;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+  .menu a {
+    font-size: 0.8em;
+  }
+  .postContent {
+    padding: 0;
+    margin: 0 1rem 1rem;
+    font-size: .8rem;
+  }
+  .post-details {
+    font-size: .8rem;
+  }
+  .about {
+    font-size: .7rem;
+    padding: 0 2rem;
+  }
+  .info {
+    padding: 1rem 0;
+  }
+  .task-topic {
+    margin: 1em 0;
+  }
+  .page-navigator {
+    margin: 2em 0;
+  }
+  .page-navigator a {
+    margin: 1em 2em;
+    font-size: .8rem;
+  }
+}

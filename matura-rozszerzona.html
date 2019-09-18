@@ -1,0 +1,33 @@
+---
+layout: page
+title: matura rozszerzona
+permalink: /matura-rozszerzona/
+---
+
+{% include nav_rozszerzenie.html %}
+
+<div class="display-posts">
+    <h1 class="responsiveTitleCenter">Matura rozszerzona</h1>
+    <div class="grid-row">   
+
+        <ul class="cards">
+            {% assign sorted-posts = site.posts | where: "categories","matura-rozszerzona" %}
+                    
+            {% for post in sorted-posts %}
+            <li class="cards__item">
+                <div class="card">
+                    
+                    <div class="card__image" style="background-image: url('{{ post.featured-image }}')"></div>
+                    <div class="card__content">
+                        <div class="card__title">{{ post.title }}</div>
+                        <p class="card__text">{{ post.description }}</p>
+                        <a class="btn btn--block card__btn" href="{{ post.url }}">Czytaj więcej</a>
+                    </div>
+                    
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>

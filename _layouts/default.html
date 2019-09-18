@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  {% include head.html %}
+
+  <body>
+    <div class="site-container">
+      <div class="site-pusher">
+
+      {% include header.html %}
+
+      <section class="site-content pageCenter-Text backgroundPage">
+        <div class="container">
+          <h1 class="responsiveTitleCenter">Z nami zdasz Maturę na 100%!</h1>
+          <p class="description">Masz <b>kłopoty</b> z matematyką?<br>a może chcesz uzyskać <b>lepszy</b> wynik?<br>Jesteś we właściwym miejscu.</p>
+        </div>
+      </section>
+      <article class="page page-white">
+        <h1 class="responsiveTitleCenter">O stronie</h1>
+        <div class="row center-div">
+          <div class="col-35">
+            <div class="aboutWebsite">
+              <img src="{{ '/assets/img/photo2main.png' | relative_path }}" alt="tablet" width="200" height="200" class="img">
+            </div>
+            <div class="aboutWebsite">
+              <h2 class="responsiveTitle rootColor">Dla kogo jest strona?</h2>
+              <p class="description">Nasza strona jest przeznaczona dla <b>maturzystów</b>, dla <b>uczniów</b> szkół średnich, dla <b>pasjonatów</b> oraz dla <b>wszystkich</b> którzy kochają matematykę oraz chcą poszerzyć swoją wiedzę i nauczyć się czegoś nowego!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row center-div">
+          <div class="col-35">
+            <div class="aboutWebsite">
+              <h2 class="responsiveTitle rootColor">Co znajdziesz na naszej stronie?</h2>
+              <p class="description">Na naszej stronie znajdziesz wiele szczegółowo opracowanych zagadnień które pomogą Ci zdać maturę z najlepszym wynikiem! Nie tylko zapamiętasz jak rozwiązywać zadania ale też je zrozumiesz, dzięki zamieszczonym dowodom! Poznasz też wiele zagadań które nie są omawiane na lekcjach matematyki a pomogą Ci zyskać świetny wynik na maturze i rozwiną twoje umiejętności!</p>
+            </div>
+            <div class="aboutWebsite">
+              <img src="{{ '/assets/img/photo1main.png' | relative_url }}" alt="laptop" width="200" height="300" class="img">
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page pageRoot">
+        <h1 class="responsiveTitleCenter">Ostatnio dodane tematy w maturze podstawowej</h1> 
+        <div class="grid-row">   
+          <ul class="cards">
+            {% assign sorted-posts = site.posts | where: "categories","matura-podstawowa" %}
+                            
+            {% for post in sorted-posts limit: 3 %}
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image" style="background-image: url('{{ post.featured-image }}')"></div>
+                  <div class="card__content">
+                    <div class="card__title">{{ post.title }}</div>
+                    <p class="card__text">{{ post.description }}</p>
+                    <a class="btn btn--block card__btn" href="{{ post.url }}">Czytaj więcej</a>
+                  </div>   
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      <article class="page page-white">
+        <h1 class="responsiveTitleCenter">Ostatnio dodane tematy w maturze rozszerzonej</h1>
+        <div class="grid-row">   
+            <ul class="cards">
+              {% assign sorted-posts = site.posts | where: "categories","matura-rozszerzona" %}
+
+              {% for post in sorted-posts limit: 3 %}
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image" style="background-image: url('{{ post.featured-image }}')"></div>
+                    <div class="card__content">
+                      <div class="card__title">{{ post.title }}</div>
+                      <p class="card__text">{{ post.description }}</p>
+                      <a class="btn btn--block card__btn" href="{{ post.url }}">Czytaj więcej</a>
+                    </div>   
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+      </article>
+      <aside align="center" style="min-width:250px;min-height:250px;display: flex;justify-content: center;align-items: center;border-top: 2px dotted var(--dark-color);">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Display -->
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6378986598075156"
+            data-ad-slot="8607109992"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+      </aside>
+      
+      {% include footer.html %} {% include scripts.html %}
+      </div>
+    </div>
+  </body>
+</html>

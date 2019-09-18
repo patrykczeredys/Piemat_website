@@ -1,0 +1,48 @@
+<head>
+  <!-- Robots -->
+  {%- unless page.canonical == false -%}
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+  {%- endunless -%}
+
+  <!-- Site encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Site description, title -->
+  {% assign _page_description = page.description | default: site.description %}
+  <meta name="description" content="{{ _page_description }}">
+  <meta name="keywords" content="matematyka, problemy matemematyczne, matura, matura podstawowa, matura rozszerzona, matura, egzamin maturalny, ciekawostki maturalne, rowiązywanie zadań, zadania z matematki, pewniaki maturalne, pewniaki">
+  <title>{{ site.title }}</title>
+
+  <!-- Styles -->
+  <link rel="icon" href="{{ '/assets/img/pi.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/page.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/responsive.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Adsense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6378986598075156",
+            enable_page_level_ads: true
+       });
+  </script>
+  <script async custom-element="amp-auto-ads"
+    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+  <!-- MathJax -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ "HTML-CSS": { linebreaks: { automatic: true } }, SVG: { linebreaks: { automatic: true } }, showMathMenu: false, tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+
+  <!-- Font-awesome -->
+  <script src="https://kit.fontawesome.com/f4178d5b80.js"></script>
+</head>
