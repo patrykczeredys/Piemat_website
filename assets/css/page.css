@@ -225,6 +225,7 @@ img {
   color: #000;
   cursor: default;
   border-bottom: 2px dotted;
+  line-height: 2;
 }
 .tasks-content li:last-child {
   border-bottom: none;
