@@ -3,7 +3,7 @@ layout: post
 title: "Dowód nierówności matura 2015"
 description: W tym artykule przedstawimy rozwiązanie zadanie z majowej matury rozszerzonej z roku 2015 na 5 sposobów!
 permalink: /:categories/:year/:month/:title/
-featured-image: /assets/img/wykres4.png
+featured-image: /assets/img/dowody_matura_rozszerzona.png
 featured-image-alt: wielomiany
 categories: "matura-rozszerzona"
 tags: [dowody, matura-rozszerzona]
@@ -29,7 +29,7 @@ $$\displaystyle x^{4}-x^{2}-2x+3>0$$
 
 $$\displaystyle x^{4}+x^{2}-2x^{2}-2x+1+1+1>0$$
 
-$$\displaystyle \left( x^{2} -2x^{2} +1\right) +\left( x^{2} -2x+1\right) +1 >0$$
+$$\displaystyle \left( x^{4} -2x^{2} +1\right) +\left( x^{2} -2x+1\right) +1 >0$$
 
 $$\displaystyle \left( x^{2} -1\right)^{2} +( x-1)^{2} +1 >0$$
 
