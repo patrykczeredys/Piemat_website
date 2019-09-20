@@ -14,16 +14,29 @@ layout: page
             
             {% for post in filter %}
 
-            <li class="cards__item">
-                <div class="card">
-                    
-                <div class="card__image" style="background-image: url('{{ post.featured-image }}')"></div>
-                    <div class="card__content">
-                        <div class="card__title">{{ post.title }}</div>
-                        <p class="card__text">{{ post.description }}</p>
-                        <a class="btn btn--block card__btn" href="{{ post.url }}">Czytaj więcej</a>
+                <li class="cards__item">
+                    <div class="card">
+                        
+                    <div class="card__image" style="background-image: url('{{ post.featured-image }}')"></div>
+                        <div class="card__content">
+                            <div class="card__title">{{ post.title }}</div>
+                            <p class="card__text">{{ post.description }}</p>
+                            <a class="btn btn--block card__btn" href="{{ post.url }}">Czytaj więcej</a>
+                        </div>
                     </div>
-    
+                </li>
+
+            {% else %}
+
+                <li class="cards__item">
+                    <div class="card">
+                    
+                        <div class="card__image" style="background-image: url('/assets/img/piemat.png');background-size: auto;"></div>
+                        <div class="card__content">
+                            <div class="card__title">Brak tematów</div>
+                            <p class="card__text">Wygląda na to, iż brakuje tematów w tym dziale, ale w przyszłości się to zmieni!</p>
+                        </div>
+
                     </div>
                 </li>
 
